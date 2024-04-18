@@ -1,0 +1,661 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px 8% 50px 8%;
+}
+
+.App {
+  padding: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+  width: 30%;
+  z-index: -1;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0px 10px 20px 5px;
+  text-transform: uppercase;
+  color: #a19c96;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #a19c96;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.nav button {
+  text-transform: uppercase;
+  border: none;
+  font-weight: 100;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: inherit;
+  color: #a19c96;
+}
+
+.nav button:hover {
+  text-transform: lowercase;
+  color: #44413c;
+}
+
+.portfolio {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5%;
+}
+
+.portfolio-head {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10vh;
+  max-width: 700px;
+}
+
+.portfolio-head h1 {
+  font-family: "Playfair Display", serif;
+  color: #6d6964;
+  padding: 60px 0;
+  margin-top: 30px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.portfolio h2 {
+  font-weight: 200;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  color: #6d6964;
+}
+
+.portfolio-head p {
+  color: #a19c96;
+  padding: 30px 60px;
+}
+
+.portfolio img {
+  margin-top: 1.5%;
+  object-fit: cover;
+  animation: 3s fadeIn;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero {
+  /* background-image: url(./hero.jpg);*/
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  margin-bottom: 50px;
+  animation: fadeIn 5s;
+  /* margin-right: 40px; */
+}
+
+.hero h1 {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4rem;
+  width: 100%;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+  border-bottom: 8px solid #fff;
+}
+
+.whimsy {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 5s;
+}
+
+.whimsy img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.whimsy h2 {
+  display: none;
+  width: 20%;
+  max-width: 640px;
+  padding-left: 8%;
+  font-family: "Hedvig", serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+  color: #6d6964;
+}
+
+.blurb {
+  width: 100%;
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blurb h2 {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+  color: #6d6964;
+}
+
+.blurb h3 {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+  color: #6d6964;
+  font-style: italic;
+}
+
+.blurb button {
+  display: none;
+  width: 40%;
+  background-color: #a19c96;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.mini-me {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 14% 0;
+}
+
+.mini-me img {
+  width: 37%;
+  height: auto;
+  border-radius: 150px;
+  height: 50vh;
+  object-fit: cover;
+  margin-right: 8%;
+  max-width: 280px;
+}
+
+.mini-me p {
+  width: 45%;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: normal;
+  margin-bottom: 30px;
+  margin-top: 3vh;
+  color: #6d6964;
+  max-width: 380px;
+}
+
+.about-me {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-main {
+  width: 100%;
+  object-fit: cover;
+  height: 60vh;
+  margin: 90px 0;
+  animation: 3s fadeIn;
+  overflow: clip;
+}
+
+.about-main img {
+  object-fit: cover;
+}
+
+.column-shots {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  width: 100%;
+  animation: 3s fadeIn;
+  height: 80vh;
+}
+
+.column-shots img {
+  /* width: 32%; */
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 90px;
+}
+
+.about-me h1 {
+  font-family: "Playfair Display", serif;
+  color: #6d6964;
+  padding: 60px 0;
+  margin-top: 30px;
+  max-width: 700px;
+}
+
+.about-me h2 {
+  font-weight: 200;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  color: #6d6964;
+  max-width: 700px;
+}
+
+.about-me p {
+  color: #a19c96;
+  padding: 30px 60px;
+  max-width: 700px;
+}
+
+.about-me img {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.booking {
+  width: 100%;
+  padding: 20px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+form {
+  width: 100%;
+  margin-top: 50px;
+  max-width: 500px;
+}
+
+.booking input {
+  font-family: monospace;
+  border: 3px solid #c3bbb1;
+  background-color: transparent !important;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #c3bbb1;
+}
+
+.booking h2 {
+  font-weight: 200;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  color: #6d6964;
+}
+
+::placeholder {
+  color: #a19c96;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: #a19c96;
+}
+
+textarea {
+  border: 3px solid #c3bbb1;
+  color: #a19c96;
+  font-family: monospace;
+  background-color: transparent;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  height: 150px;
+  padding: 10px;
+}
+
+.booking button {
+  width: 100%;
+  font-family: monospace;
+  padding: 10px 50px;
+  background-color: transparent;
+  color: #c3bbb1;
+  border: 3px solid #c3bbb1;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.booking button:hover {
+  background-color: #f3eee7;
+  cursor: pointer;
+}
+
+.book-home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.book-home h2 {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  font-size: 1.13rem;
+  margin-bottom: 20px;
+  color: #6d6964;
+}
+
+.book-home p {
+  width: 100%;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: normal;
+  margin-bottom: 30px;
+  margin-top: 3vh;
+  color: #6d6964;
+  max-width: 584px;
+}
+
+.book-home button {
+  padding: 10px 50px;
+  background-color: inherit;
+  color: #6d6964;
+  border: none;
+  border: 1px solid #a19c96;
+  text-transform: uppercase;
+}
+
+.book-home button:hover {
+  background-color: #f3eee7;
+  cursor: pointer;
+}
+
+footer {
+  color: white !important;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2% 5%;
+  border-radius: 4px;
+  height: 40vh;
+  margin-top: 6vh;
+}
+
+.footer-column {
+  width: 30%;
+}
+
+.mailer-container form {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.mailer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-right: 5%;
+  max-width: 280px;
+}
+
+.mailer-container h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.mailer-container input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  margin: 10px 0;
+  padding: 5px 0;
+  color: white;
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.mailer-container input:focus {
+  outline: none;
+}
+
+.mailer-container input::placeholder {
+  color: white;
+}
+
+.mailer-container button {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+}
+
+.mailer-container button:hover {
+  background-color: white;
+  color: #c3bbb1;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.mailer-container p {
+  padding-top: 5px;
+  font-family: "Rubik", san-serif;
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.footer-menu {
+  width: 100%;
+  padding-right: 3%;
+  margin-bottom: 20px;
+}
+
+footer h2 {
+  font-family: "Rubik", san-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-family: "EB Garamond", serif;
+  font-size: 1.1rem;
+}
+
+.get-in-touch {
+  width: 100%;
+}
+
+footer h3 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.hidden-col {
+  display: none;
+}
+
+.link {
+  font-style: italic;
+  color: #c3bbb1;
+}
+
+@media screen and (min-width: 600px) {
+  .hidden {
+    display: block;
+    opacity: 0.5;
+    margin: 0 40px;
+  }
+
+  .App {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer-column {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .hidden-col {
+    display: block;
+    opacity: 0.5;
+  }
+
+  .column-shots img {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me p {
+    padding: 30px 0px;
+  }
+
+  .portfolio-head p {
+    padding: 30px 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mini-me {
+    flex-direction: column;
+  }
+
+  .mini-me img {
+    width: 75%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0;
+    margin-top: -145px;
+    height: 270px;
+    border: 8px solid #fff;
+  }
+
+  .mini-me p {
+    margin-top: 38px;
+    width: 75%;
+  }
+
+  footer {
+    display: block;
+    height: auto;
+  }
+
+  .mailer-container {
+    width: 100%;
+    padding: 0 0 35px 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  margin-top: 13vh;
+  color: #c3bbb1;
+  overflow: hidden;
+  font-family: "Rubik", sans-serif;
+}
+
+/*potentially add a class for each type of photoshoot and style a hover state of italic. Later though. Final touches.*/
+
+/*portfolio page gets a layout of photos all on different fade in delay times */
