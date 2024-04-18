@@ -1,8 +1,5 @@
 import Nav from "./Nav";
-import hero from "../hero.jpg";
-import whimsyImage from "../couple.jpg";
-import jordanMain from "../jordanmain.jpg";
-import tank from "../tank.jpg";
+
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -38,7 +35,12 @@ export default function Home() {
 
 function Hero({ children }) {
   return (
-    <div className="hero" style={{ backgroundImage: `url(${hero}` }}>
+    <div
+      className="hero"
+      style={{
+        backgroundImage: `url("https://lh3.googleusercontent.com/pw/AP1GczPDQWnBY7_0fTrdS3ZCPEbqCtYC1n5ohbVBpqDtb84UcLs9mv-vWaEnO7-kwp65gQxhf7MmOSwpc9ZHacfUow6RWu8OST5g3zIiAkZVc3MtoyyN9KaPv-gRpaUP_xumrkxj8RuSqiVK4xR3fTY1VwOzkVsPlGdIoQYcGWiUkZ4ImAmJOkeTRi97EhsjOEcggDbNWCMzYk5NX2yE6aXfqlgATe-e1OoAZULbrpRlYBOmE1ViL0OxfX68OCDP6y4gm7OqU1KlZJDIPs1Vc9lrU7PvyEfALIkQ5ZHtZlgS_ghnEQwjlh6S5obWar6mmHUVzZ8JzBPZYO9Lm90x6_MCN1Jd72lrArR4ERgUxPVIsTu8KpEJQjddN1BKIR-PdoY5VW16dxX9P1GijkzYfXoDIepqFiv0_Hs7RA3W_u4pwMXwMbTUKZR82iYdepYZnXgLAUOFH8KupAkUeVfhu-I8sSZPKhN8ffPXdNI7PuX0tZtGHZ54qZsHhTaEw_BeTrhMjFUlUi3HZuCPB6jG952qKr0KuTAx1lVXh8crWM5GjraPQRnQmImIC0VEEl7FmWcsDakX_7PqXbSKKEvdUi3V7qixyxofvOR6No_Nc1TI77cE-YlYPZ3CcARX99A0v9E-jfPuwq5uiZs41HX8ikpE0kIEqGjb4hb1OiZ4XzNelnKnxwB3JVNdfYt5Xxt9tjC8B3fUy_y8LdmcGqYOFF6ycGoR32yHzlqn96yGjlxneFzMzMo2ArO5PTDd0uMe6caQdWXXIPCl23ZHxt3MpDDHJywuWxaTP0k9E2f6MEEQxVmU0Cpo-Z6K9l1EYEVi0djI6NszQI881RPwjKc0OstSmNx2q3wD1YdUGolO5tNzDwaQipXrHtiAioSB9X6GrDKfhD0sZsZCuLBOnORLUS6Pfqo=w883-h1210-s-no-gm?authuser=0")`,
+      }}
+    >
       {children}
     </div>
   );
@@ -58,7 +60,7 @@ function Blurb() {
 function Whimsy() {
   return (
     <div className="whimsy">
-      <img src={whimsyImage} />
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczMc3cDQYlcu4it69ZfEm2us7uUC7vjf773aTFe2f5DKq5LGM1U__3Wp8xSImMVHWz0tKwbUs2h8W_xWIMAzxP9qy6t_OcRCSjNSg65LA1P-o1zowcXsdX9pUu3fUAGNIhVPu9HXQxOHURTHIu9CEQ60vmQyqt9RtKOPDUKmH3oJZUe9OZ4L16piHp8p81UdOzjH3sIToxgYyGpvFVa0ScieaMe4UR5s-iSqjFxkp93Mxi1iPTGGu4fU5g_WrIOJSuqcYpKJHd71Kwk2wCOjM9InNOHy013wowKevDIvRgg6FRRKMtpMSzlleQ4VeXYldkm3T5eqBDi8cvLXWoTTIQIZdlvFDIlqcEAvA-5DIPticrozMkvD8TfETbjba8LgIxBcqCiF3vkiHFF9FblqEr5B4z-LtCsD6dM7dCmgbvzxtmzrZl0wwKtzjc4eHR2XyxMAOQk9kqOBijjSwocyBsUj-aIuSpB--8D0oBLgW0NoTn1Y2T3PV0DWrkNwc5Ei-SpFq4yC28Y8XAbnQIDrVZF5-C2YI2rLQE1sRbh6_q3jqeYe5HouVLL2sv5wGgxUH0ASfKVwWoHSQHXeW38Syf_gJSqPxdt0rpsQkQ9DQfkdSVzTOyqh-Jq2-zJB1YC3h5SKS88udYll2BQi0ycWUE4_0aCmmTwwuZnllb6HL9Au3FRLAGqM_miufl52_9U6aXvnsto9j1OptcaFZnMkgFq4k4YhASHzj0PYwwN4tU7IDKYib3_ZVKZhE705bHl_gGo1lZJUfStEZv2yvhsQf5A1jkvR4PAuHeGroDOQ7OUTBMifkKV4P78TYnRlZblKViKZtLSWpoZTxXibjQARsiUepuUYP4qUjGtap2CBrjffFxmKqdU_ZYxHdv1H6DDeOQv4zZC1a5NtP-Yu7G59TRE=w2170-h1446-s-no-gm?authuser=0" />
       <h2>A touch of whimsy for your everyday.</h2>
     </div>
   );
@@ -67,7 +69,7 @@ function Whimsy() {
 function MiniMe() {
   return (
     <div className="mini-me">
-      <img src={jordanMain} />
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOaK49safNQY-5w2GCSmys2x1_nR5rG7VE2uDXagzJxFXzilDDc_aWxpTj0Bb0tZzRIkTvmx4q0D-gDQ1CNxWdZ7ayqUWI-WDZemOEF5bf_ed7nk-x4hUKhR3XfiPWxMhOHrJG8jreCsQl7OcJoOLkDcYJpt-U3QNLR6LVHhGxZBOKyE86jJSwF5P4JBB8E16HjHyIt_E7MGBbjxERaYPi3689kOFKCkDgeAzduM48k610EftSMrD7F2HMgbSoLj_njqkcsXzz2_9ADyk4doAT42uSz8gPktTYNNpVkuWD0fEGJnC9I9XQW_BTz1vN1ZyXfg3vPk8zidjEvN_QsIscNGn6-ltHM5EwCYq2mdxhcv_jpGjvEFJyJK6FAQFefnwhX9uGToTjZmI07wVjDQpWgg3tInBj8kdYbfzQM3AgAntxlCMCM_k-l1F5Q8NnOjVjeHF2PrUV3hHi-fYhzTCTesUPq50Ug9_tvTqJFYYfwnlLM06fBCEfGbouA2vdMuGwCLt13nr-nJtc8kyPuJoILIoQD7enKRfh8w2soVKNSaPMj1RPg8ZRAyb6lDn-bNww8j9KLS6Uh5I-HUGmEXLEILqoaJqhgR0E3078dyxSxpA3WVxqd1SwC8UD7EbCyPI47WaF6l58bJGPuNxznkAs5jk6XGTBtDBNJGu0zZzkgcZ6N1emHiVmOq4p-Pk_1_tpA8mK_ej-iPCv30EZdbyj0cHBIjeRPsJBPM6UpkMI5bFthjwtCXHPVN8peouwZh8CsHGrqGQvRTBTPIwsih2_XYHt_E5A2FnZZmaKObVvgrNEuXNXZPSeXdbV2vXApXOgqoaaeE4-q8M5VzbrDWNPZEtSuWGw8gLHulPKVxvrnr4wiCDyCQrIpHJgzvI_nyQWHpoSsZOE49eEJr2dQXgo=w1445-h963-s-no-gm?authuser=0" />
       <p>
         My name is Jordan and I've been looking at the world through my rose
         colored lens since I was thirteen years old. I studied at a liberal arts
