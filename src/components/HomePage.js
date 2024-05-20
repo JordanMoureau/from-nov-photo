@@ -3,6 +3,10 @@ import hero from "../herotwo.jpg";
 import couple from "../couple.jpg";
 import aboutme from "../jordanmain.jpg";
 
+import DanceOne from "../danceone.jpg";
+import DanceTwo from "../dancetwo.jpg";
+import DanceThree from "../dancethree.jpg";
+
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -22,7 +26,7 @@ export default function Home() {
         </Hero>
 
         <div className="hidden">
-          <Hero margin={0}>
+          <Hero>
             {" "}
             <h1>From November Photo&shy;graphy</h1>
           </Hero>
@@ -31,6 +35,7 @@ export default function Home() {
       <Blurb />
       <Whimsy />
       <MiniMe />
+      <SmallCol />
       <Booking />
     </>
   );
@@ -85,6 +90,16 @@ function MiniMe() {
         <br />
         <em>Surrounded with love.</em>
       </p>
+    </div>
+  );
+}
+
+function SmallCol() {
+  return (
+    <div className="small-col-container">
+      <img src={DanceOne} />
+      <img src={DanceTwo} />
+      <img src={DanceThree} />
     </div>
   );
 }
