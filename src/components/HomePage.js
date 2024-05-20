@@ -1,5 +1,5 @@
 import Nav from "./Nav";
-import hero from "../hero.jpg";
+import hero from "../herotwo.jpg";
 import couple from "../couple.jpg";
 import aboutme from "../jordanmain.jpg";
 
