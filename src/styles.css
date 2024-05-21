@@ -134,6 +134,12 @@ a {
   /* margin-right: 40px; */
 }
 
+@media screen and (min-width: 850px) {
+  .hero {
+    height: 150vh;
+  }
+}
+
 .hero-header-container {
   width: 100%;
   border-bottom: 8px solid #fff;
