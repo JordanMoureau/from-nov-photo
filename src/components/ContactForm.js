@@ -78,7 +78,7 @@ export default function ContactForm() {
         name="message"
         onChange={(e) => setMessage(e.target.value)}
         id="message"
-        placeholder="Tell me about what you're thinking..."
+        placeholder="Tell me about what you're thinking for a photoshoot..."
         required
       />
       <button type="submit" disabled={sent}>

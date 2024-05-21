@@ -8,36 +8,80 @@ import DanceTwo from "../dancetwo.jpg";
 import DanceThree from "../dancethree.jpg";
 
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { RecentPhotosSetOne } from "./RecentPhotoshoots";
+import { RecentPhotosSetTwo } from "./RecentPhotoshoots";
 
 export default function Home() {
   return (
     <>
-      <Nav />
+      <RecentPhotos />
       <div className="hero-container">
-        <div className="hidden">
-          <Hero>
-            <h1>From November Photo&shy;graphy</h1>
-          </Hero>
-        </div>
-
         <Hero>
-          {" "}
-          <h1>From November Photo&shy;graphy</h1>
-        </Hero>
-
-        <div className="hidden">
-          <Hero>
-            {" "}
+          <div className="hero-header-container">
             <h1>From November Photo&shy;graphy</h1>
-          </Hero>
-        </div>
+          </div>
+          <Nav />
+        </Hero>
       </div>
       <Blurb />
+      <SmallCol />
+
+      <BlurbTwo />
       <Whimsy />
       <MiniMe />
-      <SmallCol />
+
       <Booking />
     </>
+  );
+}
+
+function RecentPhotos() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function handleClick() {
+    setIsOpen(!isOpen);
+  }
+  return (
+    <div
+      className={
+        isOpen ? "recent-photos-container open" : "recent-photos-container"
+      }
+    >
+      <div onClick={handleClick} className="recent-photos-button">
+        <i className={isOpen ? "arrow down" : "arrow up"}></i>
+        <p>Recent Photoshoots</p>
+      </div>
+
+      <div className={!isOpen ? "hidden-col recent-photos" : "recent-photos"}>
+        <PhotoMap />
+      </div>
+    </div>
+  );
+}
+
+function PhotoMap() {
+  return (
+    <div className="recent-photos">
+      <div className="set">
+        <div className="set-heading">
+          <h2>Brie & Micah</h2>
+          <p>A Wild Flower Elopement</p>
+        </div>
+        {RecentPhotosSetOne.map((images) => (
+          <img src={images.image} alt={images.alt} key={images.image} />
+        ))}
+      </div>
+      <div className="set">
+        <div className="set-heading">
+          <h2>Mandie & Mickey</h2>
+          <p>A Backlit Romance</p>
+        </div>
+        {RecentPhotosSetTwo.map((images) => (
+          <img src={images.image} alt={images.alt} key={images.image} />
+        ))}
+      </div>
+    </div>
   );
 }
 
@@ -59,8 +103,6 @@ function Blurb() {
     <div className="blurb">
       <h2>It's a tender, sweet, warm love. </h2>
       <h3> That's my vibe. That's what I'm here to capture.</h3>
-
-      <button>Read More About What We do</button>
     </div>
   );
 }
@@ -69,7 +111,6 @@ function Whimsy() {
   return (
     <div className="whimsy">
       <img src={couple} />
-      <h2>A touch of whimsy for your everyday.</h2>
     </div>
   );
 }
@@ -100,6 +141,20 @@ function SmallCol() {
       <img src={DanceOne} />
       <img src={DanceTwo} />
       <img src={DanceThree} />
+    </div>
+  );
+}
+
+function BlurbTwo() {
+  return (
+    <div className="blurb">
+      <h3 style={{ marginBottom: "0" }}> A little shy, a little thoughtful.</h3>
+      <p style={{ marginTop: "0" }}>
+        <br /> <br />I like to find hidden things when I shoot. Secret feelings,
+        wants, hopes. These aren't photos you can get just anywhere. We're all
+        flawed. When I shoot, instead of hiding them away, I want to make them
+        beautiful.
+      </p>
     </div>
   );
 }

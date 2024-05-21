@@ -1,5 +1,7 @@
 import NavLogo from "./NavLogo";
 import ContactForm from "./ContactForm";
+import BookOne from "../booktwo.jpg";
+import BookThree from "../backlitcouple.jpg";
 
 export default function Book() {
   return (
@@ -23,6 +25,7 @@ export default function Book() {
             your photos and I deliver sneak peaks within a few days! So get
             excited!
           </p>
+
           <h2>Reach out, lets chat photoshoots</h2>
           <p>
             I highly recomend reading{" "}
@@ -45,8 +48,18 @@ export default function Book() {
             make the experience worth while for you.
           </p>
         </div>
+        <SmallCol />
         <ContactForm />
       </div>
     </>
+  );
+}
+
+function SmallCol() {
+  return (
+    <div className="small-duo-container">
+      <img src={BookOne} />
+      <img src={BookThree} />
+    </div>
   );
 }
