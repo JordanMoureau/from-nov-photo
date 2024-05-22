@@ -12,6 +12,8 @@ import { useState } from "react";
 import { RecentPhotosSetOne } from "./RecentPhotoshoots";
 import { RecentPhotosSetTwo } from "./RecentPhotoshoots";
 
+import logo from "../logo.png";
+
 export default function Home() {
   return (
     <>
@@ -19,7 +21,8 @@ export default function Home() {
       <div className="hero-container">
         <Hero>
           <div className="hero-header-container">
-            <h1>From November Photo&shy;graphy</h1>
+            <img src={logo} />
+            {/* <h1>From November Photo&shy;graphy</h1> */}
           </div>
           <Nav />
         </Hero>

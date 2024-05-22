@@ -142,8 +142,13 @@ a {
 
 .hero-header-container {
   width: 100%;
-  border-bottom: 8px solid #fff;
+  border-bottom: 2px solid #f3eee7;
   margin-bottom: 5px;
+}
+
+.hero-header-container img {
+  width: 100%;
+  max-width: 500px;
 }
 
 .hero h1 {

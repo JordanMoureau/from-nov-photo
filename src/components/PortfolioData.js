@@ -25,7 +25,57 @@ import kidssilly from "../portfolioimages/kidssilly.jpg";
 import olderdanny from "../portfolioimages/dannyolder.jpg";
 import girlportrait from "../portfolioimages/babybean.jpg";
 
+import Grooms from "../portfolioimages/grooms.jpg";
+import GroomsBW from "../portfolioimages/groomsbw.jpg";
+import sarahbw from "../portfolioimages/sarahbw.jpg";
+import sarahfam from "../portfolioimages/sarahfam.jpg";
+import sarahfambw from "../portfolioimages/sarahfambw.jpg";
+import sarahfamgold from "../portfolioimages/sarahfamgold.jpg";
+
+import veilkiss from "../portfolioimages/veilkiss.jpg";
+import lauraflowers from "../portfolioimages/lauraflowers.jpg";
+
+import MichBrieOne from "../components/recentphotoshoots/mbseven.jpg";
+import MickeyMandieOne from "../components/recentphotoshoots/mmoutoffocus.jpg";
+
 export const PortfolioImages = [
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: MichBrieOne,
+    width: "97.5%",
+    key: 1,
+  },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: MickeyMandieOne,
+    width: "97.5%",
+    key: 1,
+  },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: sarahfamgold,
+    width: "48%",
+    key: 1,
+  },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: sarahbw,
+    width: "48%",
+    key: 1,
+  },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: sarahfambw,
+    width: "97.5%",
+    key: 1,
+  },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: sarahfam,
+    width: "97.5%",
+    key: 1,
+  },
+
   {
     alt: "abby and cameron celebrate walking down the aisle as newlyweds",
     image: weddingwalk,
@@ -48,6 +98,26 @@ export const PortfolioImages = [
     image: weddingkiss,
     width: "48%",
   },
+
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: GroomsBW,
+    width: "97.5%",
+    key: 1,
+  },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: lauraflowers,
+    width: "48%",
+    key: 1,
+  },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: veilkiss,
+    width: "48%",
+    key: 1,
+  },
+
   {
     alt: "april and brian celebrating their marriage",
     image: aprilwedding,
