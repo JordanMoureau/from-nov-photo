@@ -114,6 +114,22 @@ a {
   animation: 3s fadeIn;
 }
 
+.home-nav {
+  margin-top: -42px;
+}
+
+@media screen and (max-width: 526px) {
+  .home-nav {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 977px) {
+  .home-nav {
+    margin-top: -240px;
+  }
+}
+
 .hero-container {
   width: 100%;
   display: flex;
@@ -128,27 +144,27 @@ a {
   color: #fff;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   margin-bottom: 50px;
   animation: fadeIn 5s;
   /* margin-right: 40px; */
 }
 
-@media screen and (min-width: 850px) {
+/* @media screen and (min-width: 850px) {
   .hero {
     height: 150vh;
   }
-}
+} */
 
 .hero-header-container {
   width: 100%;
-  border-bottom: 2px solid #f3eee7;
   margin-bottom: 5px;
 }
 
 .hero-header-container img {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .hero h1 {

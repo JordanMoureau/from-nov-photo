@@ -24,7 +24,9 @@ export default function Home() {
             <img src={logo} />
             {/* <h1>From November Photo&shy;graphy</h1> */}
           </div>
-          <Nav />
+          <div className="home-nav">
+            <Nav />
+          </div>
         </Hero>
       </div>
       <Blurb />

@@ -28,7 +28,7 @@ import girlportrait from "../portfolioimages/babybean.jpg";
 import Grooms from "../portfolioimages/grooms.jpg";
 import GroomsBW from "../portfolioimages/groomsbw.jpg";
 import sarahbw from "../portfolioimages/sarahbw.jpg";
-import sarahfam from "../portfolioimages/sarahfam.jpg";
+import sarahgold from "../portfolioimages/sarahgold.jpg";
 import sarahfambw from "../portfolioimages/sarahfambw.jpg";
 import sarahfamgold from "../portfolioimages/sarahfamgold.jpg";
 
@@ -63,15 +63,16 @@ export const PortfolioImages = [
     width: "48%",
     key: 1,
   },
+
   {
     alt: "abby and cameron celebrate walking down the aisle as newlyweds",
-    image: sarahfambw,
+    image: sarahgold,
     width: "97.5%",
     key: 1,
   },
   {
     alt: "abby and cameron celebrate walking down the aisle as newlyweds",
-    image: sarahfam,
+    image: sarahfambw,
     width: "97.5%",
     key: 1,
   },
