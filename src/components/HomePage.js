@@ -8,7 +8,7 @@ import DanceTwo from "../dancetwo.jpg";
 import DanceThree from "../dancethree.jpg";
 
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { RecentPhotosSetOne } from "./RecentPhotoshoots";
 import { RecentPhotosSetTwo } from "./RecentPhotoshoots";
 
@@ -47,6 +47,7 @@ function RecentPhotos() {
   function handleClick() {
     setIsOpen(!isOpen);
   }
+
   return (
     <div
       className={

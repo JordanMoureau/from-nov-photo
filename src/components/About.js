@@ -25,7 +25,7 @@ export default function About() {
           </h2>
           <p>
             When I was thirteeen my best friend's sister got both of us into
-            photography. We'd sit around her computer a the local coffee shop
+            photography. We'd sit around her computer at the local coffee shop
             learning how to use the cameras and critiquing eachother's work. We
             were caught up, spellbound by a feeling. Arranging a frame to show a
             world only we knew, only we saw. Then finding a way to show it to

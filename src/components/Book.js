@@ -11,7 +11,7 @@ export default function Book() {
       <div className="booking">
         <div className="portfolio-head">
           <h1>Book a Photoshoot</h1>
-
+          <SmallCol />
           <p>
             I'm always excited to talk about projects and photoshoots so don't
             hesitate to contact me. I'm able to work with lots of different
@@ -48,7 +48,7 @@ export default function Book() {
             make the experience worth while for you.
           </p>
         </div>
-        <SmallCol />
+
         <ContactForm />
       </div>
     </>
