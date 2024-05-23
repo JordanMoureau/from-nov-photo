@@ -17,7 +17,6 @@ import mombabytwo from "../portfolioimages/mommababytwo.jpg";
 import family from "../portfolioimages/familyportrait.jpg";
 import seniorshotone from "../portfolioimages/seniorshotone.jpg";
 import seniorshottwo from "../portfolioimages/seniorportraittwo.jpg";
-import seniorshotthree from "../portfolioimages/seniorshot.jpg";
 import babybean from "../portfolioimages/gemmakiss.jpg";
 import bridalparty from "../portfolioimages/weddingparty.jpg";
 import kids from "../portfolioimages/kids.jpg";
@@ -25,7 +24,6 @@ import kidssilly from "../portfolioimages/kidssilly.jpg";
 import olderdanny from "../portfolioimages/dannyolder.jpg";
 import girlportrait from "../portfolioimages/babybean.jpg";
 
-import Grooms from "../portfolioimages/grooms.jpg";
 import GroomsBW from "../portfolioimages/groomsbw.jpg";
 import sarahbw from "../portfolioimages/sarahbw.jpg";
 import sarahgold from "../portfolioimages/sarahgold.jpg";
@@ -36,7 +34,11 @@ import veilkiss from "../portfolioimages/veilkiss.jpg";
 import lauraflowers from "../portfolioimages/lauraflowers.jpg";
 
 import MichBrieOne from "../components/recentphotoshoots/mbseven.jpg";
-import MickeyMandieOne from "../components/recentphotoshoots/mmoutoffocus.jpg";
+import MickeyMandieOne from "../components/recentphotoshoots/mmeskimo.jpg";
+
+import MickeyMandieThree from "../components/recentphotoshoots/mmtogether.jpg";
+
+import MickyMandieTwo from "../components/recentphotoshoots/mmsmiling.jpg";
 
 export const PortfolioImages = [
   {
@@ -45,6 +47,19 @@ export const PortfolioImages = [
     width: "97.5%",
     key: 1,
   },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: MickeyMandieThree,
+    width: "48%",
+    key: 1,
+  },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: MickyMandieTwo,
+    width: "48%",
+    key: 1,
+  },
+
   {
     alt: "abby and cameron celebrate walking down the aisle as newlyweds",
     image: MickeyMandieOne,
@@ -198,11 +213,6 @@ export const PortfolioImages = [
     alt: "graduating senior drama shot two",
     image: seniorshottwo,
     width: "48%",
-  },
-  {
-    alt: "senior photoshoot",
-    image: seniorshotthree,
-    width: "97.5%",
   },
 
   {
