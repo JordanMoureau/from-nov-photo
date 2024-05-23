@@ -151,11 +151,17 @@ a {
   /* margin-right: 40px; */
 }
 
-/* @media screen and (min-width: 850px) {
+@media screen and (min-width: 900px) {
   .hero {
-    height: 150vh;
+    background-position: 0 -300px;
   }
-} */
+}
+
+@media screen and (min-width: 1140px) {
+  .hero {
+    background-position: 0 -500px;
+  }
+}
 
 .hero-header-container {
   width: 100%;

@@ -40,13 +40,61 @@ import MickeyMandieThree from "../components/recentphotoshoots/mmtogether.jpg";
 
 import MickyMandieTwo from "../components/recentphotoshoots/mmsmiling.jpg";
 
+import MBShoulder from "../portfolioimages/mbshoulder.jpg";
+import MBKiss from "../portfolioimages/mbkiss.jpg";
+import heroshot from "../portfolioimages/heroshot.jpg";
+import herotwo from "../portfolioimages/herotwo.jpg";
+import MBdetail from "../portfolioimages/mbdetail.jpg";
+import cuteblackandwhite from "../portfolioimages/cuteblackandwhite.jpg";
+
+import MBKisstall from "../portfolioimages/mbkisstall.jpg";
+import BriePortrait from "../portfolioimages/brieportrait.jpg";
+
 export const PortfolioImages = [
   {
     alt: "abby and cameron celebrate walking down the aisle as newlyweds",
-    image: MichBrieOne,
+    image: MBKisstall,
     width: "97.5%",
     key: 1,
   },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: cuteblackandwhite,
+    width: "48%",
+    key: 1,
+  },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: MBdetail,
+    width: "48%",
+    key: 1,
+  },
+
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: heroshot,
+    width: "97.5%",
+    key: 1,
+  },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: MBKiss,
+    width: "48%",
+    key: 1,
+  },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: MichBrieOne,
+    width: "48%",
+    key: 1,
+  },
+  {
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: MickeyMandieOne,
+    width: "97.5%",
+    key: 1,
+  },
+
   {
     alt: "abby and cameron celebrate walking down the aisle as newlyweds",
     image: MickeyMandieThree,
@@ -59,13 +107,13 @@ export const PortfolioImages = [
     width: "48%",
     key: 1,
   },
-
   {
     alt: "abby and cameron celebrate walking down the aisle as newlyweds",
-    image: MickeyMandieOne,
+    image: sarahgold,
     width: "97.5%",
     key: 1,
   },
+
   {
     alt: "abby and cameron celebrate walking down the aisle as newlyweds",
     image: sarahfamgold,
@@ -79,12 +127,6 @@ export const PortfolioImages = [
     key: 1,
   },
 
-  {
-    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
-    image: sarahgold,
-    width: "97.5%",
-    key: 1,
-  },
   {
     alt: "abby and cameron celebrate walking down the aisle as newlyweds",
     image: sarahfambw,
