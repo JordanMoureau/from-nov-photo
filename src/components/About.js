@@ -52,7 +52,7 @@ export default function About() {
             fall baby, my birthday in late November, so I thought 'I'm from
             November.' And it stuck.
           </p>
-          <img src={desktop} />
+          <img src={desktop} style={{ width: "80%" }} />
           <h2>Everything, all at once. Always.</h2>
           <p>
             I'm a single mom of three fantastic kids. We live in a cozy
