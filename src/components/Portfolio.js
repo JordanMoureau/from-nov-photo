@@ -16,8 +16,7 @@ export default function Portfolio() {
             stage to make your dream shoot come true.
           </p>
           <h2>
-            "Your photos are so whimsical. I want to live in them." - Client
-            Becca
+            "Your photos are so whimsical. I want to live in them." -Becca
           </h2>
           <p>
             I think about your photoshoot as more like setting the stage for
@@ -37,9 +36,11 @@ export default function Portfolio() {
         <div className="portfolio-head" style={{ marginTop: "90px" }}>
           <h2>Thanks so much for coming this far!</h2>
           <p>
-            If you'd like to see more examples of my work, shoot me a message,
-            and let’s set up a time to meet. I'll pull out my super secret
-            photography album stash of memories.
+            Send me a message to book a photoshoot. I have a variety of
+            availability, mainly in the evenings to catch the pretty light, but
+            if you're very adventurous I have a special love for dawn
+            photoshoots. Evening light is geat but dawn light is something else
+            entirely.
           </p>
         </div>
       </div>

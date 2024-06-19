@@ -10,6 +10,42 @@ import mbsix from "./recentphotoshoots/mbsix.jpg";
 import mbfive from "./recentphotoshoots/mbdetail.jpg";
 import mbseven from "./recentphotoshoots/mbseven.jpg";
 
+import bportrait from "../portfolioimages/bportrait.jpg";
+import bcheadkiss from "../portfolioimages/bcheadkiss.jpg";
+import bccelebrate from "../portfolioimages/bccelebrate.jpg";
+import bcdetail from "../portfolioimages/bcdetail.jpg";
+import bepartytime from "../portfolioimages/bcpartytime.jpg";
+
+export const RecentPhotosSetThree = [
+  {
+    alt: "A beautiful bride with sweeping veil",
+    image: bportrait,
+    width: "100%",
+    key: 1,
+  },
+  {
+    alt: "Wedding couple forehead kiss at photoshoot",
+    image: bcheadkiss,
+    width: "100%",
+  },
+  {
+    alt: "bride and groom walking down the aisle",
+    image: bccelebrate,
+    width: "100%",
+  },
+
+  {
+    alt: "detail photo from wedding day",
+    image: bcdetail,
+    width: "100%",
+  },
+  {
+    alt: "reception party photography",
+    image: bepartytime,
+    width: "100%",
+  },
+];
+
 export const RecentPhotosSetOne = [
   {
     alt: "cute couple doing eskimo kisses",

@@ -11,22 +11,30 @@ export default function Book() {
       <div className="booking">
         <div className="portfolio-head">
           <h1>Book a Photoshoot</h1>
-          <SmallCol />
           <p>
-            I'm always excited to talk about projects and photoshoots so don't
-            hesitate to contact me. I'm able to work with lots of different
-            kinds of budgets. The average photoshoot runs between 45-60 minutes
-            depending on what we need. The end product is 12-18 professionally
-            shot and edited photos. I do mainly color shots with a sprinkling of
-            black and white (they are a favorite of mine, but if they aren't a
-            favorite of yours feel free to let me know).
-            <br />
-            <br /> Editing turn around varies, typically two weeks you'll have
-            your photos and I deliver sneak peaks within a few days! So get
-            excited!
+            Don't hesitate to contact me, I'm always excited to chat
+            photoshoots. <br /> A little info: The average photoshoot runs
+            between 45-60 minutes depending on what we need. The end product is
+            20-30 professionally shot and edited photos. I do mainly color shots
+            with a sprinkling of black and white (they are a favorite of mine,
+            but if they aren't a favorite of yours feel free to let me know).
           </p>
+          <h2>
+            "Jordan made us comfortable stepping out of our comfort zone. And
+            the results were magical!" - Brie
+          </h2>
 
-          <h2>Reach out, lets chat photoshoots</h2>
+          <p>
+            Editing turn around varies, typically two weeks you'll have your
+            photos and I deliver sneak peaks within a few days! So get excited!
+          </p>
+          <SmallCol />
+
+          <h2>
+            "The photos turned out beautiful and Jordan was exceptionally kind,
+            patient, even sang to our baby to calm her. It was incredibly sweet
+            and it's now her favorite lullaby!" - Sarah
+          </h2>
           <p>
             I highly recomend reading{" "}
             <a

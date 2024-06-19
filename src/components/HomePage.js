@@ -1,5 +1,5 @@
-import Nav from "./Nav";
-import hero from "../herotwo.jpg";
+import Nav from "./NavLogo";
+import hero from "../portfolioimages/mbkisstall.jpg";
 import couple from "../couple.jpg";
 import aboutme from "../jordanmain.jpg";
 
@@ -9,25 +9,31 @@ import DanceThree from "../dancethree.jpg";
 
 import { Link } from "react-router-dom";
 import { useState, useRef } from "react";
-import { RecentPhotosSetOne } from "./RecentPhotoshoots";
-import { RecentPhotosSetTwo } from "./RecentPhotoshoots";
+import {
+  RecentPhotosSetOne,
+  RecentPhotosSetThree,
+  RecentPhotosSetTwo,
+} from "./RecentPhotoshoots";
 
-import logo from "../logo.png";
+import logo from "../logoFNPlong.png";
 
 export default function Home() {
   return (
     <>
       <RecentPhotos />
-      <div className="hero-container">
-        <Hero>
-          <div className="hero-header-container">
-            <img src={logo} />
-            {/* <h1>From November Photo&shy;graphy</h1> */}
+
+      <Hero>
+        <div className="hero-logo">
+          <p>est 2010</p>
+          <img src={logo} />
+          <div className="hero-logo-bottom">
+            <p>You've got the love - We've got the vision</p>
           </div>
-          <div className="home-nav">
-            <Nav />
-          </div>
-        </Hero>
+        </div>
+      </Hero>
+
+      <div style={{ marginTop: "-20px" }}>
+        <Nav />
       </div>
       <Blurb />
       <SmallCol />
@@ -38,6 +44,19 @@ export default function Home() {
 
       <Booking />
     </>
+  );
+}
+
+function Hero({ children }) {
+  return (
+    <div
+      className="hero"
+      style={{
+        backgroundImage: `url(${hero})`,
+      }}
+    >
+      {children}
+    </div>
   );
 }
 
@@ -71,6 +90,15 @@ function PhotoMap() {
     <div className="recent-photos">
       <div className="set">
         <div className="set-heading">
+          <h2>Becca & Colin</h2>
+          <p>A Disney perfect Wedding</p>
+        </div>
+        {RecentPhotosSetThree.map((images) => (
+          <img src={images.image} alt={images.alt} key={images.image} />
+        ))}
+      </div>
+      <div className="set">
+        <div className="set-heading">
           <h2>Brie & Micah</h2>
           <p>A Wild Flower Elopement</p>
         </div>
@@ -91,23 +119,10 @@ function PhotoMap() {
   );
 }
 
-function Hero({ children }) {
-  return (
-    <div
-      className="hero"
-      style={{
-        backgroundImage: `url(${hero})`,
-      }}
-    >
-      {children}
-    </div>
-  );
-}
-
 function Blurb() {
   return (
     <div className="blurb">
-      <h2>It's a tender, sweet, warm love. </h2>
+      <h2>It's a tender, sweet love. </h2>
       <h3> That's my vibe. That's what I'm here to capture.</h3>
     </div>
   );
@@ -179,7 +194,8 @@ function Booking() {
         photographing all over Northern Idaho, Eastern Washington and even
         ocassionally Seattle. Families are my bread and butter from
         weddings/elopements to maternity, newborn and on. I also cover every
-        kind of event with photography and HiDef videography. <br /> <br />
+        kind of event, from weddings to work events and grand openings. <br />{" "}
+        <br />
         So reach out, tell me about what you're thinking and lets make it
         happen.
       </p>
