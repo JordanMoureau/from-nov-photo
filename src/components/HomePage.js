@@ -20,8 +20,6 @@ import logo from "../logoFNPlong.png";
 export default function Home() {
   return (
     <>
-      <RecentPhotos />
-
       <Hero>
         <div className="hero-logo">
           <p>est 2010</p>
