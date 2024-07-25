@@ -6,6 +6,7 @@ import Book from "./components/Book";
 import "./styles.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import PopUp from "./components/PopUp";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="book" element={<Book />} />
           </Routes>
         </BrowserRouter>
+        <PopUp />
         <Footer />
       </div>
     </div>
