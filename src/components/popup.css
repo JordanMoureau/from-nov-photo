@@ -98,6 +98,11 @@
   font-weight: 500;
 }
 
+.clear .button:hover {
+  cursor: pointer;
+  background-color: #a19c96;
+}
+
 .close-btn {
   position: absolute;
   top: 10px;
