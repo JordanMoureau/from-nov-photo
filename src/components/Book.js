@@ -5,7 +5,7 @@ import BookThree from "../backlitcouple.jpg";
 
 export default function Book() {
   return (
-    <>
+    <div className="other-app">
       <NavLogo />
 
       <div className="booking">
@@ -59,7 +59,7 @@ export default function Book() {
 
         <ContactForm />
       </div>
-    </>
+    </div>
   );
 }
 

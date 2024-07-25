@@ -6,7 +6,7 @@ import desktop from "../desktop.jpg";
 
 export default function About() {
   return (
-    <>
+    <div className="other-app">
       <NavLogo />
       <div className="services">
         <div className="about-me">
@@ -64,6 +64,6 @@ export default function About() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

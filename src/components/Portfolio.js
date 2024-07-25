@@ -3,7 +3,7 @@ import { PortfolioImages } from "./PortfolioData";
 
 export default function Portfolio() {
   return (
-    <>
+    <div className="other-app">
       <NavLogo />
 
       <div className="portfolio">
@@ -44,6 +44,6 @@ export default function Portfolio() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

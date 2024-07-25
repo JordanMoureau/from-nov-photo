@@ -15,11 +15,14 @@ img {
 }
 
 .App {
-  margin: 10px 3% 50px 3%;
-  padding: 10px 0 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.other-app {
+  margin: 10px 3% 50px 3%;
+  padding: 10px 0 10px 0;
 }
 
 .nav-bar {
@@ -45,6 +48,21 @@ img {
   font-optical-sizing: auto;
   font-style: normal;
   text-transform: uppercase;
+}
+
+.social {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #a19c96;
+}
+
+.social a {
+  transition: 1s;
+}
+
+.social a:hover {
+  color: #f3eee7;
 }
 
 .nav button {
@@ -138,15 +156,15 @@ a {
 
 .hero {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   width: 100%;
   /* background-image: url(./hero.jpg);*/
   color: #fff;
   background-size: cover;
-  background-position: 25% 75%;
+  background-position: top;
   background-repeat: no-repeat;
-  height: 88vh;
+  height: 120vh;
   margin-bottom: 50px;
   animation: fadeIn 5s;
   /* margin-right: 40px; */
@@ -154,7 +172,6 @@ a {
 
 .hero-logo {
   width: 50%;
-  border: 1px solid white;
   padding: 20px 0px;
   text-align: center;
 }
@@ -166,9 +183,7 @@ a {
 }
 
 .hero-logo img {
-  padding: 0px 10% 10px 10%;
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .hero-logo-bottom {
@@ -713,6 +728,7 @@ textarea {
 }
 
 footer {
+  margin: 10px 3% 0px 3%;
   color: white !important;
   display: flex;
   justify-content: flex-end;
@@ -724,6 +740,12 @@ footer {
   border-radius: 4px;
   height: 40vh;
   margin-top: 6vh;
+}
+
+@media screen and (min-width: 1150px) {
+  .hero {
+    background-position: center;
+  }
 }
 
 @media screen and (min-width: 1250px) {
@@ -855,8 +877,7 @@ footer h3 {
   }
 
   .App {
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 }
 

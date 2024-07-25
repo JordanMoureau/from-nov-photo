@@ -1,5 +1,4 @@
-import Nav from "./NavLogo";
-import hero from "../portfolioimages/mbkisstall.jpg";
+import hero from "../hero.jpg";
 import couple from "../couple.jpg";
 import aboutme from "../jordanmain.jpg";
 
@@ -7,7 +6,9 @@ import DanceOne from "../danceone.jpg";
 import DanceTwo from "../dancetwo.jpg";
 import DanceThree from "../dancethree.jpg";
 
-import { Link } from "react-router-dom";
+import logoFNP from "../fnplogo.png";
+
+import { NavLink, Link } from "react-router-dom";
 import { useState, useRef } from "react";
 import {
   RecentPhotosSetOne,
@@ -15,32 +16,30 @@ import {
   RecentPhotosSetTwo,
 } from "./RecentPhotoshoots";
 
-import logo from "../logoFNPlong.png";
+import { AiFillInstagram } from "react-icons/ai";
+import { IoLogoFacebook } from "react-icons/io5";
 
 export default function Home() {
   return (
     <>
       <Hero>
+        <Social />
         <div className="hero-logo">
-          <p>est 2010</p>
-          <img src={logo} />
-          <div className="hero-logo-bottom">
-            <p>You've got the love - We've got the vision</p>
-          </div>
+          <img src={logoFNP} />
+          <Nav />
         </div>
       </Hero>
+      <div className="other-app">
+        <div style={{ marginTop: "-20px" }}></div>
+        <Blurb />
+        <SmallCol />
 
-      <div style={{ marginTop: "-20px" }}>
-        <Nav />
+        <BlurbTwo />
+        <Whimsy />
+        <MiniMe />
+
+        <Booking />
       </div>
-      <Blurb />
-      <SmallCol />
-
-      <BlurbTwo />
-      <Whimsy />
-      <MiniMe />
-
-      <Booking />
     </>
   );
 }
@@ -201,6 +200,46 @@ function Booking() {
       <Link to="/book">
         <button>Lets Make Some Magic</button>
       </Link>
+    </div>
+  );
+}
+
+function Nav() {
+  return (
+    <div className="nav">
+      <NavLink to="/">
+        <button>home</button>
+      </NavLink>
+      <NavLink to="/portfolio">
+        <button>portfolio</button>
+      </NavLink>
+      <NavLink to="/about">
+        <button>about me</button>
+      </NavLink>
+      <NavLink to="/book">
+        <button>book</button>
+      </NavLink>
+    </div>
+  );
+}
+
+function Social() {
+  return (
+    <div className="social">
+      <a
+        href="https://www.instagram.com/fromnovphoto"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <AiFillInstagram size={23} />
+      </a>
+      <a
+        href="https://www.facebook.com/profile.php?id=61560491293257"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <IoLogoFacebook size={23} />
+      </a>
     </div>
   );
 }
