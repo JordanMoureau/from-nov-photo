@@ -50,7 +50,6 @@
 }
 
 .form-container {
-  width: 100%;
   padding: 30px 60px 30px 30px;
   display: flex;
   align-items: center;
@@ -115,4 +114,36 @@
 
 .hide {
   display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .Pop-Image {
+    display: none;
+  }
+
+  .form-container {
+    justify-content: center;
+  }
+
+  .popup-inner {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .popup-inner {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .popup-inner {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .popup-inner {
+    width: 90%;
+  }
 }

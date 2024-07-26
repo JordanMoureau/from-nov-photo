@@ -65,41 +65,18 @@ export const PortfolioImages = [
     key: 1,
   },
   {
-    alt: "portrait of couple before their marriage",
-    image: bcheadkiss,
+    alt: "intimate photo of couple kissing at elopment photoshoot",
+    image: MBKiss,
     width: "48%",
     key: 1,
   },
   {
-    alt: "portrait of couple before their marriage",
-    image: bcdetail,
+    alt: "cute couple getting their photo taken in the grass in the mountains",
+    image: MichBrieOne,
     width: "48%",
     key: 1,
   },
-  {
-    alt: "married couple kiss in reception hall wedding photoshoot",
-    image: bckiss,
-    width: "97.5%",
-    key: 1,
-  },
-  {
-    alt: "married couple kiss in reception hall wedding photoshoot",
-    image: bportrait,
-    width: "97.5%",
-    key: 1,
-  },
-  {
-    alt: "couple celebrates being married walking down the aisle",
-    image: bcpartytime,
-    width: "97.5%",
-    key: 1,
-  },
-  {
-    alt: "couple celebrates being married walking down the aisle",
-    image: bccelebrate,
-    width: "97.5%",
-    key: 1,
-  },
+
   {
     alt: "couple celebrates being married walking down the aisle",
     image: bcreception,
@@ -113,39 +90,21 @@ export const PortfolioImages = [
     key: 1,
   },
   {
-    alt: "Cute couple photo of two people in love",
-    image: cuteblackandwhite,
-    width: "48%",
-    key: 1,
-  },
-  {
     alt: "elopement photoshoot detail shot of flowers",
     image: MBdetail,
     width: "48%",
     key: 1,
   },
+  {
+    alt: "Cute couple photo of two people in love",
+    image: cuteblackandwhite,
+    width: "48%",
+    key: 1,
+  },
 
   {
-    alt: "beautiful photo of couple eloping",
-    image: heroshot,
-    width: "97.5%",
-    key: 1,
-  },
-  {
-    alt: "intimate photo of couple kissing at elopment photoshoot",
-    image: MBKiss,
-    width: "48%",
-    key: 1,
-  },
-  {
-    alt: "cute couple getting their photo taken in the grass in the mountains",
-    image: MichBrieOne,
-    width: "48%",
-    key: 1,
-  },
-  {
-    alt: "beautiful backlit couple",
-    image: MickeyMandieOne,
+    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    image: weddingwalk,
     width: "97.5%",
     key: 1,
   },
@@ -190,12 +149,6 @@ export const PortfolioImages = [
   },
 
   {
-    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
-    image: weddingwalk,
-    width: "97.5%",
-    key: 1,
-  },
-  {
     alt: "a beautiful summer wedding by the lake",
     image: abbywedding,
     width: "97.5%",
@@ -236,11 +189,7 @@ export const PortfolioImages = [
     image: aprilwedding,
     width: "97.5%",
   },
-  {
-    alt: "sweet baby wrapped in hoodie",
-    image: danny,
-    width: "97.5%",
-  },
+
   {
     alt: "aniversary portraits, cute couple in the summer",
     image: coupletwo,
@@ -256,6 +205,11 @@ export const PortfolioImages = [
     alt: "black and white of couple in the summer",
     image: blackandwhite,
     width: "48%",
+  },
+  {
+    alt: "sweet baby wrapped in hoodie",
+    image: danny,
+    width: "97.5%",
   },
 
   {
@@ -301,43 +255,6 @@ export const PortfolioImages = [
     width: "97.5%",
   },
 
-  {
-    alt: "graduating senior drama shot",
-    image: seniorshotone,
-    width: "48%",
-  },
-  {
-    alt: "graduating senior drama shot two",
-    image: seniorshottwo,
-    width: "48%",
-  },
-
-  {
-    alt: "portraits of baby and mommy",
-    image: babybean,
-    width: "97.5%",
-  },
-
-  {
-    alt: "photography of three kids",
-    image: kids,
-    width: "48%",
-  },
-  {
-    alt: "silly photoshoot with kids",
-    image: kidssilly,
-    width: "48%",
-  },
-  {
-    alt: "portrait of a son",
-    image: olderdanny,
-    width: "97.5%",
-  },
-  {
-    alt: "portrait photography of a daughter",
-    image: girlportrait,
-    width: "97.5%",
-  },
   {
     alt: "bridal and wedding photography",
     image: bridalparty,
