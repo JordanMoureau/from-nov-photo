@@ -27,14 +27,16 @@ export default function Portfolio() {
             cherish forever.
           </p>
         </div>
-        {PortfolioImages.map((images) => (
-          <img
-            src={images.image}
-            alt={images.alt}
-            width={images.width}
-            key={images.image}
-          />
-        ))}
+        <div className="portfolio-image-container">
+          {PortfolioImages.map((images) => (
+            <img
+              src={images.image}
+              alt={images.alt}
+              width={images.width}
+              key={images.image}
+            />
+          ))}
+        </div>
         <div className="portfolio-head" style={{ marginTop: "90px" }}>
           <h2>Thanks so much for coming this far!</h2>
           <p>

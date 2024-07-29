@@ -87,7 +87,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5%;
 }
 
 .portfolio-head {
@@ -96,6 +95,7 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+
   margin-bottom: 10vh;
   max-width: 700px;
 }
@@ -124,8 +124,14 @@ a {
   padding: 30px 60px;
 }
 
+.portfolio-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  max-width: 950px;
+}
+
 .portfolio img {
-  margin-top: 1.5%;
   object-fit: cover;
   animation: 3s fadeIn;
 }
