@@ -25,7 +25,7 @@ export default function Home() {
       <Hero>
         <Social />
         <div className="hero-logo">
-          <img src={logoFNP} />
+          <img alt="liberty lake photography" src={logoFNP} />
           <Nav />
         </div>
       </Hero>
@@ -57,65 +57,6 @@ function Hero({ children }) {
   );
 }
 
-function RecentPhotos() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function handleClick() {
-    setIsOpen(!isOpen);
-  }
-
-  return (
-    <div
-      className={
-        isOpen ? "recent-photos-container open" : "recent-photos-container"
-      }
-    >
-      <div onClick={handleClick} className="recent-photos-button">
-        <i className={isOpen ? "arrow down" : "arrow up"}></i>
-        <p>Recent Photoshoots</p>
-      </div>
-
-      <div className={!isOpen ? "hidden-col recent-photos" : "recent-photos"}>
-        <PhotoMap />
-      </div>
-    </div>
-  );
-}
-
-function PhotoMap() {
-  return (
-    <div className="recent-photos">
-      <div className="set">
-        <div className="set-heading">
-          <h2>Becca & Colin</h2>
-          <p>A Disney perfect Wedding</p>
-        </div>
-        {RecentPhotosSetThree.map((images) => (
-          <img src={images.image} alt={images.alt} key={images.image} />
-        ))}
-      </div>
-      <div className="set">
-        <div className="set-heading">
-          <h2>Brie & Micah</h2>
-          <p>A Wild Flower Elopement</p>
-        </div>
-        {RecentPhotosSetOne.map((images) => (
-          <img src={images.image} alt={images.alt} key={images.image} />
-        ))}
-      </div>
-      <div className="set">
-        <div className="set-heading">
-          <h2>Mandie & Mickey</h2>
-          <p>A Backlit Romance</p>
-        </div>
-        {RecentPhotosSetTwo.map((images) => (
-          <img src={images.image} alt={images.alt} key={images.image} />
-        ))}
-      </div>
-    </div>
-  );
-}
-
 function Blurb() {
   return (
     <div className="blurb">
@@ -128,7 +69,7 @@ function Blurb() {
 function Whimsy() {
   return (
     <div className="whimsy">
-      <img src={couple} />
+      <img alt="couple portrait session" src={couple} />
     </div>
   );
 }
@@ -136,18 +77,29 @@ function Whimsy() {
 function MiniMe() {
   return (
     <div className="mini-me">
-      <img src={aboutme} />
+      <img src={aboutme} alt="a wedding photographer" />
       <p>
-        My name is Jordan and I've been looking at the world through my rose
-        colored lens since I was thirteen years old. I studied at a liberal arts
-        university in deep southern South Carolina, on a schoarship to be part
-        of their photography program.
+        My name is Jordan, and I've been looking at the world through my
+        rose-colored lens since I was thirteen years old. As professional
+        photographer I get to see the whole life cycle.
         <br />
-        <br /> Travel and lovers and friends and family were captured in the
-        years to come until I found myself here. In the same place I feel I've
-        always been, doing what I always have. <br />
         <br />
-        <em>Surrounded with love.</em>
+        From weddings to maternity portraits. Newborn sessions to catching
+        backlit baby yawns and the first whole family photos when a new addition
+        comes along. All the way to high school graduation portraits.
+        <br />
+        <br />
+        I've photographed all over the US, capturing the essence of lovers,
+        friends, and family along the way. Every snapshot tells a story, and I
+        strive to bring out the unique beauty in every subject I photograph. My
+        journey has brought me back to where it all began, doing what I've
+        always loved.
+        <br />
+        <br />
+        Today, I find myself surrounded by love, immersed in the passion that
+        has driven me for years. Photography is more than just a profession for
+        me; it's a way of life. I capture the essence of love between people,
+        creating cherished memories that last a lifetime.
       </p>
     </div>
   );
@@ -156,9 +108,9 @@ function MiniMe() {
 function SmallCol() {
   return (
     <div className="small-col-container">
-      <img src={DanceOne} />
-      <img src={DanceTwo} />
-      <img src={DanceThree} />
+      <img alt="wedding photograpy" src={DanceOne} />
+      <img alt="affordable wedding photography" src={DanceTwo} />
+      <img alt="wedding photography in liberty lake" src={DanceThree} />
     </div>
   );
 }
@@ -166,12 +118,16 @@ function SmallCol() {
 function BlurbTwo() {
   return (
     <div className="blurb">
-      <h3 style={{ marginBottom: "0" }}> A little shy, a little thoughtful.</h3>
+      <h3 style={{ marginBottom: "0" }}>
+        {" "}
+        Welcome to From November Photography
+      </h3>
       <p style={{ marginTop: "0" }}>
-        <br /> <br />I like to find hidden things when I shoot. Secret feelings,
-        wants, hopes. These aren't photos you can get just anywhere. We're all
-        flawed. When I shoot, instead of hiding them away, I want to make them
-        beautiful.
+        <br /> <br />A photographer out of Liberty Lake serving Washington and
+        Northern Idaho as well as parts of Oregon. We make weddings special,
+        tease kiddos into big smiles for family photos and sing for babies at
+        newborn sessions. Anything to get that perfect shot, freezing forever
+        this moment in time.
       </p>
     </div>
   );
@@ -187,11 +143,17 @@ function Booking() {
 
       <p>
         From November Photography is a professional, (very glamorous)
-        photography service home based in Liberty Lake, Washington, but
-        photographing all over Northern Idaho, Eastern Washington and even
-        ocassionally Seattle. Families are my bread and butter from
-        weddings/elopements to maternity, newborn and on. I also cover every
-        kind of event, from weddings to work events and grand openings. <br />{" "}
+        photography service home based in Liberty Lake, Washington. From 10
+        photos to 100+ depending on the length of your photoshoot. We do
+        mini-sessions, full-day sessions for wedding photography and everything
+        in between.
+        <br />
+        <br />
+        Our photography sessions are an experience and we come highly
+        recommended by our clients. You'll receive a mixture of black and white
+        and color photos high quality, high resolution and professionally
+        edited.
+        <br />
         <br />
         So reach out, tell me about what you're thinking and lets make it
         happen.

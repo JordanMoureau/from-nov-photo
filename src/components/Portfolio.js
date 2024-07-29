@@ -11,18 +11,20 @@ export default function Portfolio() {
           <h1>My Work</h1>
 
           <p>
-            Every photoshoot is an experience. From clothes to location, to
-            lighting. It's all a mood. I'll take you step by step through each
-            stage to make your dream shoot come true.
+            Every photoshoot is a unique experience, carefully crafted from the
+            clothes to the location and lighting—it's all about setting the
+            perfect mood. I'll guide you step by step through each stage to make
+            your dream shoot a reality.
           </p>
           <h2>
             "Your photos are so whimsical. I want to live in them." -Becca
           </h2>
           <p>
-            I think about your photoshoot as more like setting the stage for
-            memories than posing and laughing and trying to make it look
-            natural. We float and flow through the location. See what it has to
-            offer together.
+            I approach your photoshoot as setting the stage for memories, rather
+            than just posing and laughing. We float and flow through the
+            location, discovering together what it has to offer. My goal is to
+            make you feel comfortable and confident, creating photos that you'll
+            cherish forever.
           </p>
         </div>
         {PortfolioImages.map((images) => (

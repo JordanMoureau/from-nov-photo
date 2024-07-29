@@ -26,7 +26,7 @@ function PopUp() {
             &times;
           </button>
           <div className="Pop-Image">
-            <img src={LaurenMia} />
+            <img alt="family photo session" src={LaurenMia} />
           </div>
           <div className="form-container">
             <MailChimpForm />

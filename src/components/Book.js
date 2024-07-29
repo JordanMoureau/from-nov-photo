@@ -12,12 +12,15 @@ export default function Book() {
         <div className="portfolio-head">
           <h1>Book a Photoshoot</h1>
           <p>
-            Don't hesitate to contact me, I'm always excited to chat
-            photoshoots. <br /> A little info: The average photoshoot runs
-            between 45-60 minutes depending on what we need. The end product is
-            20-30 professionally shot and edited photos. I do mainly color shots
-            with a sprinkling of black and white (they are a favorite of mine,
-            but if they aren't a favorite of yours feel free to let me know).
+            Hi! I'm thrilled you're considering booking with me. I love chatting
+            photoshoots. <br />
+            <br /> A little more about my service: I offer mini-sessions and
+            full-sessions, depending on your specific needs. For a mini you can
+            expect 10-15 professionally shot and edited photos as the final
+            product. For a full 20-30 high quality shots. While I primarily
+            provide color photos, I also include some black and white images,
+            which are a personal favorite. If you prefer only color photos,
+            please let me know.
           </p>
           <h2>
             "Jordan made us comfortable stepping out of our comfort zone. And
@@ -25,8 +28,9 @@ export default function Book() {
           </h2>
 
           <p>
-            Editing turn around varies, typically two weeks you'll have your
-            photos and I deliver sneak peaks within a few days! So get excited!
+            The editing turnaround time varies, but you can typically expect to
+            receive your photos within two weeks. I also provide sneak peeks
+            within a few days, so you can start getting excited!
           </p>
           <SmallCol />
 
@@ -52,8 +56,8 @@ export default function Book() {
             >
               how to dress for a professional photoshoot{" "}
             </a>
-            before coming to a shoot with me (or anybody). Great information to
-            make the experience worth while for you.
+            before coming to your portrait session. Great information to make
+            the experience worth while for you.
           </p>
         </div>
 
@@ -66,8 +70,8 @@ export default function Book() {
 function SmallCol() {
   return (
     <div className="small-duo-container">
-      <img src={BookOne} />
-      <img src={BookThree} />
+      <img alt="portrait photography" src={BookOne} />
+      <img alt="couple portait session" src={BookThree} />
     </div>
   );
 }

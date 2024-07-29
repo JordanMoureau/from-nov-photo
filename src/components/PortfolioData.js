@@ -59,204 +59,204 @@ import bportrait from "../portfolioimages/bportrait.jpg";
 
 export const PortfolioImages = [
   {
-    alt: "married couple kiss in reception hall wedding photoshoot",
+    alt: "wedding photography in spokane washington",
     image: barclays,
     width: "97.5%",
     key: 1,
   },
   {
-    alt: "intimate photo of couple kissing at elopment photoshoot",
+    alt: "elopement photography in northern idaho",
     image: MBKiss,
     width: "48%",
     key: 1,
   },
   {
-    alt: "cute couple getting their photo taken in the grass in the mountains",
+    alt: "couple photography",
     image: MichBrieOne,
     width: "48%",
     key: 1,
   },
 
   {
-    alt: "couple celebrates being married walking down the aisle",
+    alt: "liberty lake wedding photographer",
     image: bcreception,
     width: "97.5%",
     key: 1,
   },
   {
-    alt: "couple kissing in the grass during their elopment photoshoot",
+    alt: "elopement photography in spokane washington",
     image: MBKisstall,
     width: "97.5%",
     key: 1,
   },
   {
-    alt: "elopement photoshoot detail shot of flowers",
+    alt: "elopment photographer",
     image: MBdetail,
     width: "48%",
     key: 1,
   },
   {
-    alt: "Cute couple photo of two people in love",
+    alt: "couple portrait photographer",
     image: cuteblackandwhite,
     width: "48%",
     key: 1,
   },
 
   {
-    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    alt: "wedding photographers",
     image: weddingwalk,
     width: "97.5%",
     key: 1,
   },
 
   {
-    alt: "photoshoot of couple in love",
+    alt: "photography packages",
     image: MickeyMandieThree,
     width: "48%",
     key: 1,
   },
   {
-    alt: "intimate couple pose for photoshoot",
+    alt: "daily life",
     image: MickyMandieTwo,
     width: "48%",
     key: 1,
   },
   {
-    alt: "Family with baby in golden light at photoshoot",
+    alt: "portrait session",
     image: sarahgold,
     width: "97.5%",
     key: 1,
   },
 
   {
-    alt: "Family of four in photoshoot in the woods with flowers",
+    alt: "family photo session",
     image: sarahfamgold,
     width: "48%",
     key: 1,
   },
   {
-    alt: "newborn baby photoshoot",
+    alt: "newborn photoshoot",
     image: sarahbw,
     width: "48%",
     key: 1,
   },
 
   {
-    alt: "very loved new little baby photo with family",
+    alt: "newborn photographer",
     image: sarahfambw,
     width: "97.5%",
     key: 1,
   },
 
   {
-    alt: "a beautiful summer wedding by the lake",
+    alt: "portrait photography",
     image: abbywedding,
     width: "97.5%",
   },
 
   {
-    alt: "black and white floral wedding shot",
+    alt: "black and white photography",
     image: weddingfloral,
     width: "48%",
   },
   {
-    alt: "stolen kiss before nuptual",
+    alt: "wedding photographer in liberty lake",
     image: weddingkiss,
     width: "48%",
   },
 
   {
-    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    alt: "wedding photography",
     image: GroomsBW,
     width: "97.5%",
     key: 1,
   },
   {
-    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    alt: "wedding photographer in post falls",
     image: lauraflowers,
     width: "48%",
     key: 1,
   },
   {
-    alt: "abby and cameron celebrate walking down the aisle as newlyweds",
+    alt: "affordable wedding photography",
     image: veilkiss,
     width: "48%",
     key: 1,
   },
 
   {
-    alt: "april and brian celebrating their marriage",
+    alt: "wedding photographers",
     image: aprilwedding,
     width: "97.5%",
   },
 
   {
-    alt: "aniversary portraits, cute couple in the summer",
+    alt: "photography packages",
     image: coupletwo,
     width: "97.5%",
   },
   {
-    alt: "couple in tall grasses",
+    alt: "photography portfolio",
     image: hotkiss,
     width: "48%",
   },
 
   {
-    alt: "black and white of couple in the summer",
+    alt: "High quality photography",
     image: blackandwhite,
     width: "48%",
   },
   {
-    alt: "sweet baby wrapped in hoodie",
+    alt: "baby portrait photography",
     image: danny,
     width: "97.5%",
   },
 
   {
-    alt: "hardworking single dad with his two kids",
+    alt: "family photo session",
     image: singledad,
     width: "97.5%",
   },
   {
-    alt: "portrait of a little girl",
+    alt: "family portraits",
     image: girl,
     width: "48%",
   },
   {
-    alt: "whismiscal shot in the tall grass",
+    alt: "portrait photography",
     image: reeds,
     width: "48%",
   },
   {
-    alt: "baby and mommy photoshoot",
+    alt: "la carte",
     image: momportrait,
     width: "97.5%",
   },
   {
-    alt: "LGBTQ family",
+    alt: "higher price",
     image: dreamyfamily,
     width: "97.5%",
   },
   {
-    alt: "baby and mommy photo",
+    alt: "family photography sessions",
     image: mombaby,
     width: "48%",
   },
 
   {
-    alt: "baby and mommy",
+    alt: "newborn session",
     image: mombabytwo,
     width: "48%",
   },
 
   {
-    alt: "LGBTQ family photoshoot",
+    alt: "family portraits",
     image: family,
     width: "97.5%",
   },
 
   {
-    alt: "bridal and wedding photography",
+    alt: "spokane photographer",
     image: bridalparty,
     width: "97.5%",
   },
