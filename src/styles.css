@@ -89,6 +89,10 @@ img {
   justify-content: center;
 }
 
+.booking .portfolio-head {
+  margin-right: 0px;
+}
+
 .portfolio-head {
   width: 100%;
   text-align: center;
