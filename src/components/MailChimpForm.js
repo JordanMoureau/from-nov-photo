@@ -8,9 +8,7 @@ export default function MailChimpForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const url =
-      "https://getreau.us22.list-manage.com/subscribe/post-json?u=c11d44c8a3315835fb3f23716&id=f819b3bfc4&f_id=00fbd2e1f0&c=?";
-
+    const url = "https://getreau.us22.list-manage.com/subscribe/post-json";
     const params = new URLSearchParams({
       u: "c11d44c8a3315835fb3f23716",
       id: "f819b3bfc4",
@@ -18,16 +16,12 @@ export default function MailChimpForm() {
       EMAIL: email,
       FNAME: firstName,
       tags: "12872",
-      c: "callback", // This parameter can be used to set the callback function name
+      c: "callback", // Ensure this is correct for your setup
     });
 
     try {
-      const response = await fetch(`${url}&${params.toString()}`, {
+      const response = await fetch(`${url}?${params.toString()}`, {
         method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
         mode: "cors",
       });
 
@@ -40,14 +34,16 @@ export default function MailChimpForm() {
       console.log(json.result);
 
       if (json.result === "success") {
-        setMessage("Thank you for subscribing! We promise we won't spam you.");
+        setMessage("Thank you for subscribing!");
       } else {
-        setMessage("Thank you for subscribing! We promise we won't spam you.");
+        setMessage("Thank you for subscribing!");
       }
     } catch (error) {
-      setMessage("Thank you for subscribing! We promise we won't spam you.");
+      setMessage("Thank you for subscribing!");
     }
   };
+
+  // We're sorry. Looks like there was an error.
   return (
     <div id="mc_embed_shell">
       <div id="mc_embed_signup">
