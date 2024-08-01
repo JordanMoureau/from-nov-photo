@@ -63,7 +63,7 @@ export default function MailChimpForm() {
         >
           <div id="mc_embed_signup_scroll">
             <h2>READY, BEAUTIFUL?</h2>
-            <p>Join to our email list for a special $90 summer mini-session.</p>
+            <p>Join our email list for a special $90 summer mini-session.</p>
             <div className="indicates-required hide">
               <span className="asterisk ">*</span> indicates required
             </div>
