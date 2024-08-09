@@ -133,6 +133,8 @@ a {
   flex-wrap: wrap;
   gap: 13px;
   max-width: 950px;
+  justify-content: center;
+  margin-left: 100px;
 }
 
 .portfolio img {
@@ -883,7 +885,6 @@ footer h3 {
 @media screen and (min-width: 1750px) {
   .portfolio-head {
     max-width: 560px;
-    margin-right: 100px;
   }
 }
 

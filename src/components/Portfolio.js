@@ -36,16 +36,21 @@ export default function Portfolio() {
               key={images.image}
             />
           ))}
-        </div>
-        <div className="portfolio-head" style={{ marginTop: "90px" }}>
-          <h2>Thanks so much for coming this far!</h2>
-          <p>
-            Send me a message to book a photoshoot. I have a variety of
-            availability, mainly in the evenings to catch the pretty light, but
-            if you're very adventurous I have a special love for dawn
-            photoshoots. Evening light is geat but dawn light is something else
-            entirely.
-          </p>
+
+          <div
+            className="portfolio-head centering"
+            style={{ marginTop: "90px" }}
+          >
+            <h2>Thanks so much for coming this far!</h2>
+            <p>
+              If you're thinking about booking a photoshoot, just send me a
+              message. I usually have availability in the evenings, which is
+              great for catching that soft, pretty light. But if you're up for
+              something different, I have a real love for dawn photoshoots.
+              Evening light is nice, but there's something really special about
+              the way the world looks at dawn.
+            </p>
+          </div>
         </div>
       </div>
     </div>
